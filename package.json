@@ -1,0 +1,19 @@
+{
+  "name": "typings",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "tsc": "tsc",
+    "clean": "rm -rf dist",
+    "watch": "tsc --build tsconfig.json -w",
+    "build": "rm -rf dist && tsc --build tsconfig.json",
+    "start": "node dist/array/index.spec.js > src/array/index.result.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "~3.4.x"
+  }
+}
